@@ -1,5 +1,5 @@
 extends Control
 
 
-onready var status_label : Label = $TitleMarginContainer/CenterContainer/Label
+onready var status_label : Label = $GameMarginContainer/CenterContainer/VBoxContainer/Status
 onready var info_label : Label = $GameMarginContainer/CenterContainer/VBoxContainer/Info

@@ -169,11 +169,11 @@ func change_target(new_target_index : int):
 
 func _on_Game_done():
 	player.game_ui.show()
-	player.game_ui.status_label.text = "Well done"
-	player.game_ui.info_label.text = "You took %05.2f seconds" % run_time
+	player.game_ui.status_label.text = "Success!"
+	player.game_ui.info_label.text = "You phased them all in %05.2f seconds" % run_time
 
 
 func _on_Game_gameover():
 	player.game_ui.show()
-	player.game_ui.status_label.text = "Game Over"
-	player.game_ui.info_label.text = "You captured %d balls" % captured_enemy
+	player.game_ui.status_label.text = "Game Over, you jumped to an orange sphere!"
+	player.game_ui.info_label.text = "You correctly phased %d sphere" % captured_enemy

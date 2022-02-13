@@ -12,6 +12,10 @@ onready var camera : Camera2D = $Camera2D
 onready var game_ui : Control = $CanvasLayer/GameUI
 
 onready var animation_player : AnimationPlayer = $AnimationPlayer
+onready var animation_player_pulse : AnimationPlayer = $AnimationPlayerSize
+
+func _ready():
+	animation_player_pulse.play("pulse")
 
 func swap_to(is_tea : bool):
 	if is_tea:
