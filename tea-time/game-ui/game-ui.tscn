@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game-ui/title_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://game-ui/game-ui.gd" type="Script" id=2]
+
+[node name="GameUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleMarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 36.0
+custom_constants/margin_top = 64
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="TitleMarginContainer"]
+margin_top = 64.0
+margin_right = 1024.0
+margin_bottom = 100.0
+
+[node name="Label" type="Label" parent="TitleMarginContainer/CenterContainer"]
+margin_left = 389.0
+margin_right = 635.0
+margin_bottom = 36.0
+custom_fonts/font = ExtResource( 1 )
+text = "-- Phaser --"
+
+[node name="GameMarginContainer" type="MarginContainer" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -154.0
+margin_bottom = 154.0
+custom_constants/margin_bottom = 220
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="GameMarginContainer"]
+margin_right = 1024.0
+margin_bottom = 88.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameMarginContainer/CenterContainer"]
+margin_left = 230.0
+margin_right = 794.0
+margin_bottom = 88.0
+custom_constants/separation = 16
+
+[node name="Status" type="Label" parent="GameMarginContainer/CenterContainer/VBoxContainer"]
+margin_right = 564.0
+margin_bottom = 36.0
+custom_fonts/font = ExtResource( 1 )
+text = "Use Spacebar to play"
+align = 1
+
+[node name="Info" type="Label" parent="GameMarginContainer/CenterContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 564.0
+margin_bottom = 88.0
+custom_fonts/font = ExtResource( 1 )
+text = "Jump on yellow, avoid orange"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

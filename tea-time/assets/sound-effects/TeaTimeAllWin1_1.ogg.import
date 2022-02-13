@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/TeaTimeAllWin1_1.ogg-325935f68268c9a007492279c39fa647.oggstr"
+
+[deps]
+
+source_file="res://assets/sound-effects/TeaTimeAllWin1_1.ogg"
+dest_files=[ "res://.import/TeaTimeAllWin1_1.ogg-325935f68268c9a007492279c39fa647.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
